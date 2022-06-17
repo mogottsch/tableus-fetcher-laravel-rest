@@ -24,11 +24,11 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.30.0",
     "stylelint-config-prettier": "^9.0.3",
-    "tableus": "file:../tableus/tableus-0.0.1.tgz",
+    "tableus": "https://github.com/zendricom/tableus.git#main",
     "typescript": "^4.7.0-beta"
   },
   "peerDependencies": {
     "@tanstack/react-table": ">=8.0.0-beta.9",
-    "tableus": "file:../tableus/tableus-0.0.1.tgz"
+    "tableus": "https://github.com/zendricom/tableus.git#main"
   }
 }
