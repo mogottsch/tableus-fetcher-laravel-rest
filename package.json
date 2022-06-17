@@ -1,0 +1,34 @@
+{
+  "name": "tableus-fetcher-laravel-rest",
+  "version": "0.0.1",
+  "description": "A fetcher for tableus that integrates the laravel API as defined by laravel-query-builder.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "tableus",
+    "laravel",
+    "laravel-query-builder",
+    "fetcher"
+  ],
+  "author": "moritz@zendri.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@tanstack/react-table": "^8.0.0-beta.9",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.30.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "tableus": "file:../tableus/tableus-0.0.1.tgz",
+    "typescript": "^4.7.0-beta"
+  },
+  "peerDependencies": {
+    "@tanstack/react-table": ">=8.0.0-beta.9",
+    "tableus": "file:../tableus/tableus-0.0.1.tgz"
+  }
+}
