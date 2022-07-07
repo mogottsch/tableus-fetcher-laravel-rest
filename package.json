@@ -1,6 +1,6 @@
 {
   "name": "@tableus/fetcher-laravel-rest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A fetcher for tableus that integrates the laravel API as defined by laravel-query-builder.",
   "main": "dist/index.js",
   "files": [
