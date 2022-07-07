@@ -4,8 +4,12 @@ import {
   FilteringState,
   isBuiltinFilterDefinition,
   PaginationState,
-} from "tableus/dist/core/types";
-import { FetchArgs, Fetcher, FetchResult } from "tableus/dist/fetcher/index";
+} from "@tableus/core/dist/core/types";
+import {
+  FetchArgs,
+  Fetcher,
+  FetchResult,
+} from "@tableus/core/dist/fetcher/index";
 
 export class LaravelRestFetcher<D extends object> implements Fetcher<D> {
   constructor(private readonly url: string) {}
