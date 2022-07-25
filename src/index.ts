@@ -51,18 +51,22 @@ export class LaravelRestFetcher<D extends object> implements Fetcher<D> {
   }
 }
 
-function setPaginationQueryParams(url: URL, paginationState: PaginationState) {
+export function setPaginationQueryParams(
+  url: URL,
+  paginationState: PaginationState
+) {
   url.searchParams.set("page", (paginationState.pageIndex + 1).toString());
   url.searchParams.set("per_page", paginationState.pageSize.toString());
 }
-function setSortingQueryParams(url: URL, sorting: SortingState) {
+
+export function setSortingQueryParams(url: URL, sorting: SortingState) {
   const sortingString = sorting
     .map((sort) => (sort.desc ? "-" : "") + sort.id)
     .join(",");
   url.searchParams.set("sort", sortingString);
 }
 
-function setFiltersQueryParams(
+export function setFiltersQueryParams(
   url: URL,
   filters: FilteringState,
   filterDefinitions: FilterDefinition[]
