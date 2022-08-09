@@ -99,6 +99,7 @@ export function setFiltersQueryParams(
     switch (filter.type) {
       case "search":
       case "select":
+      case "check":
         url.searchParams.set(`filter[${filter.key}]=`, filter.value);
         break;
       default:
