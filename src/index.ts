@@ -99,8 +99,11 @@ export function setFiltersQueryParams(
     switch (filter.type) {
       case "search":
       case "select":
-      case "check":
         url.searchParams.set(`filter[${filter.key}]=`, filter.value);
+        break;
+      case "check":
+        if (filter.value)
+          url.searchParams.set(`filter[${filter.key}]=`, filter.value);
         break;
       default:
         throw new Error(`Unsupported filter type: ${filter.type}`);
